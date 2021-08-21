@@ -16,7 +16,7 @@ public:
 		std::cout << m << " metres " << c << " centimeters" << std::endl;
 	}
 
-	friend void sum(DB&, DM&);
+	friend void sum(DB, DM);
 };
 
 class DM
@@ -34,10 +34,10 @@ public:
 		std::cout << f << " feets " << i << " inches " << std::endl;
 	}
 
-	friend void sum(DB&, DM&);
+	friend void sum(DB, DM);
 };
 
-void sum(DB& b1, DM& b2)
+void sum(DB b1, DM b2)
 {
 	std::cout << " Enter whether you want sum to be printed in feets/inches or metres/centimeters" << std::endl;
 
